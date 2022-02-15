@@ -27,6 +27,12 @@
             "description": "Get ur Id Of Telegram nd Paste Here.",
             "value": "",
             "required": false
+        },
+        "FFMPEG": {
+            "description": "Put your FFMPEG code.",
+            "value": "ffmpeg -i '''{}''' -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? '''{}''' -y",
+            "required": true
         }
     }
 }
+
